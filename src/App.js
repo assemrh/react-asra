@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import { computeHeadingLevel } from '@testing-library/react';
 
 function App() {
+  console.log(logo)
   return (
     <div className="App">
       <header className="App-header">
