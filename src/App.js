@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Layout from './components/Layout';
+import Mynav from './components/Mynav';
+import Home from './components/Home';
+import Dashboard from './components/Dashboard';
+import Products from './components/Products';
+import Customers from './components/Customers';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+//['Home', 'Dashboard', 'Products', 'Customers']
 function App() {
   console.log(logo)
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout/>
+      <Router>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/Dashboard" component={Dashboard} />
+              <Route path="/Products" component={Products} />
+              <Route path="/Customers" component={Customers} />
+            </Switch>
+        </Router>
     </div>
   );
 }

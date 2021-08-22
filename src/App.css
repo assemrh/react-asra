@@ -13,15 +13,28 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.app-header {
+  background-color: #4a63e7!important;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  position: fixed;
+  left: 80px;
+  top: 10%;
+  min-height: 80vh;
+  height: 80vh;
+  height: min-content;
+  display: flex;
+}
+.app-header ul {
+  margin-block: auto;
+}
+
+.shadow-dark {
+  box-shadow: 0 6px 15px 0 rgb(0 0 0 / 20%);
+}
+header.app-header, main.container .card{
+  border-radius: 20px;
 }
 
 .App-link {
@@ -35,4 +48,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main.container {
+  margin-block: 10vh;
+}
+
+main.container .card {
+  margin-block: 2rem;
+  min-height: 80vh;
+}
+.App-header-coomig {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
