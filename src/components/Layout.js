@@ -1,6 +1,6 @@
 import React from 'react'
-import {Navbar, Container, Dropdown, Nav, NavDropdown } from 'react-bootstrap'
-import { IconName, ImHome } from "react-icons/im";
+import {Nav} from 'react-bootstrap'
+import {  ImHome } from "react-icons/im";
 
 let Temp = function(_name) {
   this.name = _name;

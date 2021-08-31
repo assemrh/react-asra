@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, Container, Row, Col, Card, Dropdown, Nav, NavDropdown } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 
 //let variant = "danger" , idx = 1
 let vals =  [

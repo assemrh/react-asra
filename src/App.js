@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Layout from './components/Layout';
-import Mynav from './components/Mynav';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import Products from './components/Products';
